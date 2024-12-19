@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-GB
+name: 'Eyekiller / CancerFocusNI'
+primary: true
+siteGroup: d905f5ea-6302-42ff-a1ea-807c75c36f08 # Eyekiller / CancerFocusNI
+sortOrder: 1
