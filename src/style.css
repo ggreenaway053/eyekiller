@@ -36,6 +36,7 @@
   --black: #444;
 }
 body {margin: 0 auto;}
+body.static{ overflow: hidden; max-height: 100vh;}
 .container{ max-width: 1680px; margin: 0 auto; z-index: 2; }
 
 .button{
