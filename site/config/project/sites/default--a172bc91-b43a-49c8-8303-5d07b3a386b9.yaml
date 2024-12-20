@@ -1,8 +1,0 @@
-baseUrl: $PRIMARY_SITE_URL
-handle: default
-hasUrls: true
-language: en-GB
-name: 'Eyekiller / Dev Test'
-primary: true
-siteGroup: 7a46afc5-f9f9-4a1e-bb22-5540164a19db # Eyekiller / Dev Test
-sortOrder: 1
