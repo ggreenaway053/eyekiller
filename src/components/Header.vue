@@ -26,7 +26,7 @@ function toggleSearch(){
 
 <template>
   <header class="fixed w-full left-0 top-0 z-50" :class="{ stuck: isScrolled }">
-    <div class="container flex py-4 px-4 lg:px-0">
+    <div class="container flex py-4 px-4 2xl:px-0">
       <div class="mobile w-3/12 flex lg:hidden items-center">
         <button @click="toggleMenu" class="mr-5 search"><Burger /></button>
         <button @click="toggleSearch" class="search"><img src="/public/Search.svg" alt="Toggle Search" title="Toggle Search" /></button>
@@ -40,14 +40,14 @@ function toggleSearch(){
       </div>
 
       <div class="nav w-3/12 lg:w-10/12 flex relative">
-        <ul class="hidden lg:flex justify-evenly items-center w-8/12">
+        <ul class="hidden lg:flex justify-evenly items-center w-9/12">
           <li><a href="#">Get Support</a></li>
           <li><a href="#">Cancer Prevention</a></li>
           <li><a href="#">Get Involved</a></li>
           <li><a href="#">Explore</a></li>
         </ul>
 
-        <div class="buttons flex w-full lg:w-3/12 lg:left-1/12 items-center justify-end">
+        <div class="buttons flex w-full lg:w-3/12 items-center justify-end">
           <button class="search hidden lg:block" @click="toggleSearch"><img src="/public/Search.svg" alt="Search" title="Search" /></button>
           <a href="#" class="hidden lg:inline-block button text-white mx-4">Fundraise</a>
           <a href="#" class="inherit button primary"><img class="hidden md:inline mr-2.5" src="/public/heart.svg" aria-hidden="true" aria-disabled="true" /> Donate</a>
@@ -95,7 +95,7 @@ header{ border-bottom: 1px solid rgba(255,255,255,0.2); transition: .5s; }
 header .button{ font-size: 16px; }
 header .button.primary img{ margin-top: -3px; }
 header .nav li a{ color: var(--white); font-weight: 600; transition: .5s; position: relative; font-size: 18px; }
-header .nav li a:before{ content: ''; display: block; width: 0px; height: 1px; background: var(--white); transition: .3s all; position: absolute; left: 0; bottom: -2px; }
+header .nav li a:before{ content: ''; display: block; width: 0px; height: 2px; background: var(--white); transition: .3s all; position: absolute; left: 0; bottom: -2px; }
 header .nav li a:hover:before{ width: 100%; }
 
 header .search{transition: .3s; }

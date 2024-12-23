@@ -14,7 +14,7 @@ defineProps({
 </script>
 
 <template>
-  <footer class="py-12 container px-4">
+  <footer class="pt-12 pb-6 container px-4">
     <div class="main_footer flex flex-wrap pb-6">
       <div class="w-full md:w-1/2 lg:w-1/4 company pb-6 md:pb-0">
         <a href="/" class="logo inline-block mx-auto mb-4"><img src="/public/Logo_dark.svg" alt="Cancer Focus NI" title="Cancer Focus NI" /></a>
@@ -25,15 +25,27 @@ defineProps({
           <p>Monday, Wednesday & Friday 9am to 1pm</p>
         </div>
 
-        <div class="socials flex">
-          <a class="mr-4" href="#"></a>
+        <div class="socials flex mt-2">
+          <a class="mr-2" href="#"><img src="/public/social/Facebook.svg" alt="Facebook" title="Facebook"/></a>
+          <a class="mr-2" href="#"><img src="/public/social/Twitter.svg" alt="X" title="X"/></a>
+          <a class="mr-2" href="#"><img src="/public/social/Linkedin.svg" alt="LinkedIn" title="LinkedIn"/></a>
+          <a class="mr-2" href="#"><img src="/public/social/Instagram.svg" alt="Instragram" title="Instragram"/></a>
+          <a class="mr-2" href="#"><img src="/public/social/Youtube.svg" alt="Youtube" title="Youtube"/></a>
+          <a href="#"><img src="/public/social/TikTok.svg" alt="TikTok" title="TikTok"/></a>
         </div>
+
+        <img src="/public/fundingreg.png" class="mt-5" alt="Funding Regulator" title="Funding Regulator" />
       </div>
       
       <div class="nav md:w-1/2">
         <ul class="flex flex-wrap">
           <li v-for="item in nav" :key="item.link" class="w-2/4 mb-4"><a :href="item.link">{{ item.title }}</a></li>
         </ul>
+      </div>
+
+      <div class="newsletter lg:w-1/4">
+        <h5>Join our mailing list</h5>
+        <p>Sign up for our latest news and wasy to get involved.</p>
       </div>
 
     </div>
@@ -46,10 +58,16 @@ defineProps({
 </template>
 
 <style scoped>
+footer .newsletter h5{color: var(--primary); font-weight: 600; font-size: 1.2rem; }
+footer .newsletter p{ font-size: 1.1rem; }
+
+footer .socials a{ position: relative; top: 0; transition: .2s;}
+footer .socials a:hover{ top: -2px; }
 footer .details{ line-height: 40px; }
 footer .details h5{ color: #666666; font-size: 21px;}
 footer .details a{ color: var(--primary); font-size: 28px; font-weight: 600;}
 footer .gutter{ border-top: 1px solid #E1E1E1; }
-footer a:not(#phone){ text-decoration: underline; color: #1C1C1C; }
+footer a:not(#phone){ text-decoration: underline; color: #1C1C1C; transition: .3s; }
+footer a:not(#phone):hover{ color: var(--primary); }
 footer .gutter p{ color: #666666; }
 </style>
