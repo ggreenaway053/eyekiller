@@ -6,26 +6,26 @@
   font-family: 'Foco';
   font-style: normal;
   font-weight: 300;
-  src: local('Foco'), url('../public/fonts/Foco_Lt.woff') format('woff');
+  src: local('Foco'), url('../public/build/fonts/Foco_Lt.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Foco';
   font-style: normal;
   font-weight: normal;
-  src: local('Foco'), url('../public/fonts/Foco_Rg.woff') format('woff');
+  src: local('Foco'), url('../public/build/fonts/Foco_Rg.woff') format('woff');
 }
 @font-face {
   font-family: 'Foco';
   font-style: normal;
   font-weight: 600;
-  src: local('Foco Bold'), url('../public/fonts/Foco_Bd.woff') format('woff');
+  src: local('Foco Bold'), url('../public/build/fonts/Foco_Bd.woff') format('woff');
 }
 @font-face {
   font-family: 'Foco';
   font-style: normal;
   font-weight: 700;
-  src: local('Foco Bold'), url('../public/fonts/Foco_Blk.woff') format('woff');
+  src: local('Foco Bold'), url('../public/build/fonts/Foco_Blk.woff') format('woff');
 }
 :root {
   font-family: 'Foco', system-ui, Avenir, Helvetica, Arial, sans-serif;

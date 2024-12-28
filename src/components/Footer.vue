@@ -25,7 +25,7 @@
   <footer class="pt-12 pb-6 container px-4">
     <div class="main_footer flex flex-wrap pb-6">
       <div class="w-full md:w-1/2 lg:w-1/4 company pb-6 md:pb-0">
-        <a href="/" class="logo inline-block mx-auto mb-4"><img src="/public/Logo_dark.svg" alt="Cancer Focus NI" title="Cancer Focus NI" /></a>
+        <a href="/" class="logo inline-block mx-auto mb-4"><img src="/build/images/Logo_dark.svg" alt="Cancer Focus NI" title="Cancer Focus NI" /></a>
 
         <div class="details">
           <h5>Cancer Freephone Helpline</h5>
@@ -34,15 +34,15 @@
         </div>
 
         <div class="socials flex mt-2">
-          <a class="mr-2" href="#"><img src="/public/social/Facebook.svg" alt="Facebook" title="Facebook"/></a>
-          <a class="mr-2" href="#"><img src="/public/social/Twitter.svg" alt="X" title="X"/></a>
-          <a class="mr-2" href="#"><img src="/public/social/Linkedin.svg" alt="LinkedIn" title="LinkedIn"/></a>
-          <a class="mr-2" href="#"><img src="/public/social/Instagram.svg" alt="Instragram" title="Instragram"/></a>
-          <a class="mr-2" href="#"><img src="/public/social/Youtube.svg" alt="Youtube" title="Youtube"/></a>
-          <a href="#"><img src="/public/social/TikTok.svg" alt="TikTok" title="TikTok"/></a>
+          <a class="mr-2" href="#"><img src="/build/social/Facebook.svg" alt="Facebook" title="Facebook"/></a>
+          <a class="mr-2" href="#"><img src="/build/social/Twitter.svg" alt="X" title="X"/></a>
+          <a class="mr-2" href="#"><img src="/build/social/Linkedin.svg" alt="LinkedIn" title="LinkedIn"/></a>
+          <a class="mr-2" href="#"><img src="/build/social/Instagram.svg" alt="Instragram" title="Instragram"/></a>
+          <a class="mr-2" href="#"><img src="/build/social/Youtube.svg" alt="Youtube" title="Youtube"/></a>
+          <a href="#"><img src="/build/social/TikTok.svg" alt="TikTok" title="TikTok"/></a>
         </div>
 
-        <img src="/public/fundingreg.png" class="mt-5" alt="Funding Regulator" title="Funding Regulator" />
+        <img src="/build/images/fundingreg.png" class="mt-5" alt="Funding Regulator" title="Funding Regulator" />
       </div>
       
       <div class="nav md:w-1/2">

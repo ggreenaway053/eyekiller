@@ -12,12 +12,12 @@ import CtasAlt from './components/CtasAlt.vue';
   <Header />
   <Banner
     title="Supporting local people on their cancer journey"
-    desk_img="/banner-img-desktop.png"
-    mob_img="/banner-img-mobile.png"
+    desk_img="/build/images/banner-img-desktop.png"
+    mob_img="/build/images/banner-img-mobile.png"
     :links="[
-      { link: '#', title: 'Visit a Centre', img: '/visit-centre-banner-link.png' },
-      { link: '#', title: 'Get Support', img: '/get-support-banner-link.png' },
-      { link: '#', title: 'Get Involved', img: '/get-involved-banner-link.png' }
+      { link: '#', title: 'Visit a Centre', img: '/build/images/visit-centre-banner-link.png' },
+      { link: '#', title: 'Get Support', img: '/build/images/get-support-banner-link.png' },
+      { link: '#', title: 'Get Involved', img: '/build/images/get-involved-banner-link.png' }
     ]"
   />
   <Ctas
@@ -25,10 +25,10 @@ import CtasAlt from './components/CtasAlt.vue';
     subtitle="How we support you"
     background="#E6F5F9"
     :ctas="[
-      { link: '#', title: 'Recently diagnosed', img: '/recently-diagnosed-cta.jpg' },
-      { link: '#', title: 'Living with cancer', img: '/living-with-cta.jpg' },
-      { link: '#', title: 'Caring for someone', img: '/caring-cta.jpg' },
-      { link: '#', title: 'Ways to prevent cancer', img: '/ways-to-prevent-cta.jpg' }
+      { link: '#', title: 'Recently diagnosed', img: '/build/images/recently-diagnosed-cta.jpg' },
+      { link: '#', title: 'Living with cancer', img: '/build/images/living-with-cta.jpg' },
+      { link: '#', title: 'Caring for someone', img: '/build/images/caring-cta.jpg' },
+      { link: '#', title: 'Ways to prevent cancer', img: '/build/images/ways-to-prevent-cta.jpg' }
     ]"
   />
   <Flexi 
@@ -37,10 +37,10 @@ import CtasAlt from './components/CtasAlt.vue';
     para="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet vulputate dolor ac luctus.<br><br> Maecenas quis facilisis tortor. Pellentesque nulla leo, faucibus eget lacinia id, vehicula at quam. Maecenas finibus massa vitae tortor bibendum, eu eleifend lacus ullamcorper. Sed sit amet pulvinar ligula."
     background="#fff"
     side="image_right"
-    image="/therapeutic-supporting.jpg"
+    image="/build/images/therapeutic-supporting.jpg"
     :buttons="[
       { link: '#', text: 'Explore Support Centres', class: 'primary sm:mr-0 mr-4 mb-4 md:mb-0 lg:mb-0 w-full md:w-min block md:inline text-center' },
-      { link: '#', text: 'Take a Tour', class: 'secondary video w-full md:w-min block md:inline text-center', img: '/public/video-icon.svg' },
+      { link: '#', text: 'Take a Tour', class: 'secondary video w-full md:w-min block md:inline text-center', img: '/build/images/video-icon.svg' },
     ]"
   />
   <Postcode title="Find services near you" background="#E6F5F9" />
@@ -50,7 +50,7 @@ import CtasAlt from './components/CtasAlt.vue';
     para="We’ve teamed up with Oasis Travel to offer an amazing Autumn Raffle top prize of a holiday to the glamorous Pestana Dom Joao II Beach & Golf Resort, for 2 people."
     background="#fff"
     side="image_left"
-    image="/autumn-raffle-supporting.jpg"
+    image="/build/images/autumn-raffle-supporting.jpg"
     :buttons="[
       { link: '#', text: 'Find out more', class: 'primary mr-4' },
       { link: '#', text: 'All Events', class: 'plain' },
@@ -61,9 +61,9 @@ import CtasAlt from './components/CtasAlt.vue';
     para="Lorem ipsum dolor sit amet, consectetur adipiscing fusce sed turpis at lacus convallis vulputate sit amet nec dui. Nulla eu dui massa."
     background="#E6F5F9"
     :ctas="[
-      { link: '#', title: 'Fundraise with us', img: '/fundraise-cta.jpg' },
-      { link: '#', title: 'Volunteer with us', img: '/volunteer-cta.jpg' },
-      { link: '#', title: 'Shop with us', img: '/shop-cta.jpg' }
+      { link: '#', title: 'Fundraise with us', img: '/build/images/fundraise-cta.jpg' },
+      { link: '#', title: 'Volunteer with us', img: '/build/images/volunteer-cta.jpg' },
+      { link: '#', title: 'Shop with us', img: '/build/images/shop-cta.jpg' }
     ]"
   />
 

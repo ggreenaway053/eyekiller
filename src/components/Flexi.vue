@@ -40,7 +40,7 @@
 
         <div class="buttons mt-8">
           <a v-for="item in buttons" :key="item.link" :href="item.link" class="button" :class="item.class">
-            <img :src="item.img" v-if="item.img" class="inline mr-2.5"/> {{ item.text }}
+            <img :src="item.img" v-if="item.img" class="inline mr-2.5" aria-hidden="true"/> {{ item.text }}
           </a>
         </div>
       </div>

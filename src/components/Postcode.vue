@@ -15,7 +15,7 @@
   <section class="lg:py-6 section px-4">
     <div class="container p-8 lg:flex flex-wrap" :style="{ backgroundColor: background }">
       <div class="w-full lg:w-5/12 flex flex-wrap content-center justify-center px-12 lg:px-0 pb-8 lg:pb-0 content md:mb-8 lg:mb-0">
-        <img src="/public/postcode-icon.svg" :alt="title" :title="title" class="lg:mr-8 mb-4 lg:mb-0" /> <h4 class="w-full lg:w-auto text-center leading-none">{{ title }}</h4>
+        <img src="/build/images/postcode-icon.svg" :alt="title" :title="title" class="lg:mr-8 mb-4 lg:mb-0" /> <h4 class="w-full lg:w-auto text-center leading-none">{{ title }}</h4>
       </div>
       <div class="w-full lg:w-7/12 input flex flex-wrap items-center lg:pl-8">
         <form class="w-full flex flex-wrap items-center justify-between" @submit.prevent="handleSubmit">

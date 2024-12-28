@@ -29,13 +29,13 @@ function toggleSearch(){
     <div class="container flex py-4 px-4 2xl:px-0">
       <div class="mobile w-3/12 flex lg:hidden items-center">
         <button @click="toggleMenu" class="mr-5 search"><Burger /></button>
-        <button @click="toggleSearch" class="search"><img src="/public/Search.svg" alt="Toggle Search" title="Toggle Search" /></button>
+        <button @click="toggleSearch" class="search"><img src="/build/images/Search.svg" alt="Toggle Search" title="Toggle Search" /></button>
       </div>
 
       <div class="logo w-6/12 lg:w-2/12 text-center lg:text-left relative">
         <a href="/" class="logo inline-block mx-auto relative">
-          <img src="/public/Logo_dark.svg" alt="Cancer Focus NI" title="Cancer Focus NI" id="dark_logo" />
-          <img src="/public/logo.svg" alt="Cancer Focus NI" title="Cancer Focus NI" id="light_logo" />
+          <img src="/build/images/Logo_dark.svg" alt="Cancer Focus NI" title="Cancer Focus NI" id="dark_logo" />
+          <img src="/build/images/logo.svg" alt="Cancer Focus NI" title="Cancer Focus NI" id="light_logo" />
         </a>
       </div>
 
@@ -48,9 +48,9 @@ function toggleSearch(){
         </ul>
 
         <div class="buttons flex w-full lg:w-3/12 items-center justify-end">
-          <button class="search hidden lg:block" @click="toggleSearch"><img src="/public/Search.svg" alt="Search" title="Search" /></button>
+          <button class="search hidden lg:block" @click="toggleSearch"><img src="/build/images/Search.svg" alt="Search" title="Search" /></button>
           <a href="#" class="hidden lg:inline-block button text-white mx-4">Fundraise</a>
-          <a href="#" class="inherit button primary"><img class="hidden md:inline mr-2.5" src="/public/heart.svg" aria-hidden="true" aria-disabled="true" /> Donate</a>
+          <a href="#" class="inherit button primary"><img class="hidden md:inline mr-2.5" src="/build/images/heart.svg" aria-hidden="true" aria-disabled="true" /> Donate</a>
         </div>
       </div>
     </div>
@@ -58,7 +58,7 @@ function toggleSearch(){
   </header>
 
   <div id="offcanvas_menu" class="fixed t-0 pt-20 pb-4">
-    <button id="close_menu" @click="toggleMenu"><img class="" src="/public/close-circle.svg" aria-hidden="true" aria-disabled="true" /></button>
+    <button id="close_menu" @click="toggleMenu"><img class="" src="/build/images/close-circle.svg" aria-hidden="true" aria-disabled="true" /></button>
     <div class="nav flex h-full">
       <ul class="menu_items w-full">
         <li class="p-4"><a href="#">Get Support</a></li>
@@ -69,7 +69,7 @@ function toggleSearch(){
 
       <div class="buttons w-full mt-4 flex content-end justify-end px-4">
         <a href="#" class="button text-center mb-4 block w-full">Fundraise</a>
-        <a href="#" class="button primary text-center block w-full"><img class="hidden md:inline mr-2.5" src="/public/heart.svg" aria-hidden="true" aria-disabled="true" /> Donate</a>
+        <a href="#" class="button primary text-center block w-full"><img class="hidden md:inline mr-2.5" src="/build/images/heart.svg" aria-hidden="true" aria-disabled="true" /> Donate</a>
       </div>
     </div>
   </div>
