@@ -20,7 +20,7 @@ function toggleMenu(){
 }
 
 function toggleSearch(){
-  console.log('This function currently exists to showcase the @click feature. :) ');
+  alert('This currently does nothing. :) ');
 }
 </script>
 
@@ -57,7 +57,7 @@ function toggleSearch(){
     
   </header>
 
-  <div id="offcanvas_menu" class="absolute t-0 pt-20 pb-4">
+  <div id="offcanvas_menu" class="fixed t-0 pt-20 pb-4">
     <button id="close_menu" @click="toggleMenu"><img class="" src="/public/close-circle.svg" aria-hidden="true" aria-disabled="true" /></button>
     <div class="nav flex h-full">
       <ul class="menu_items w-full">

@@ -44,7 +44,7 @@
 }
 body {margin: 0 auto;}
 h2, h3{ color: var(--primary); }
-h2{ font-weight: 700; }
+h2{ font-weight: 700; font-size: 30px; }
 h3{ font-weight: 300; line-height: .9; font-size: 32px; }
 h4{
   font-weight: 700;
@@ -59,12 +59,23 @@ body.static{ overflow: hidden; max-height: 100vh;}
   padding: .5rem .75rem;
   transition: .3s all;
   border-radius: 5px;
+  font-weight: 600;
 }
 .button:hover{ filter: brightness(0.8);}
 .button.primary{
   background: var(--primary);
   color: var(--white);
   border-color: var(--primary);
+}
+.button.plain{
+  border: none;
+  color: var(--primary);
+  text-decoration: underline;
+}
+.button.secondary{
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+  color: var(--primary);
 }
 
 /* GENERAL BANNERS*/
@@ -85,7 +96,7 @@ body.static{ overflow: hidden; max-height: 100vh;}
 
 @media all and (min-width: 640px){
   .banner h1{ font-size: 64px; line-height: 8.5vw; }
-  h3{ font-size: 40px; }
+  h3, h2{ font-size: 40px; }
 }
 @media all and (min-width: 1240px){
   .banner h1{ font-size: 80px; line-height: 5.5vw; }

@@ -4,6 +4,8 @@ import Footer from './components/Footer.vue';
 import Banner from './components/Banner.vue';
 import Ctas from './components/Ctas.vue';
 import Flexi from './components/Flexi.vue';
+import Postcode from './components/Postcode.vue';
+import CtasAlt from './components/CtasAlt.vue';
 </script>
 
 <template>
@@ -36,16 +38,33 @@ import Flexi from './components/Flexi.vue';
     background="#fff"
     side="image_right"
     image="/therapeutic-supporting.jpg"
+    :buttons="[
+      { link: '#', text: 'Explore Support Centres', class: 'primary sm:mr-0 mr-4 mb-4 md:mb-0 lg:mb-0 w-full md:w-min block md:inline text-center' },
+      { link: '#', text: 'Take a Tour', class: 'secondary video w-full md:w-min block md:inline text-center', img: '/public/video-icon.svg' },
+    ]"
   />
-
-
+  <Postcode title="Find services near you" background="#E6F5F9" />
   <Flexi 
-    subtitle="What's Happening"
+    subtitle="What's happening"
     title="Autumn Raffle 2024 - the Algarve is calling!"
     para="We’ve teamed up with Oasis Travel to offer an amazing Autumn Raffle top prize of a holiday to the glamorous Pestana Dom Joao II Beach & Golf Resort, for 2 people."
     background="#fff"
     side="image_left"
-    image="/therapeutic-supporting.jpg"
+    image="/autumn-raffle-supporting.jpg"
+    :buttons="[
+      { link: '#', text: 'Find out more', class: 'primary mr-4' },
+      { link: '#', text: 'All Events', class: 'plain' },
+    ]"
+  />
+  <CtasAlt
+    title="Ways you can get involved"
+    para="Lorem ipsum dolor sit amet, consectetur adipiscing fusce sed turpis at lacus convallis vulputate sit amet nec dui. Nulla eu dui massa."
+    background="#E6F5F9"
+    :ctas="[
+      { link: '#', title: 'Fundraise with us', img: '/fundraise-cta.jpg' },
+      { link: '#', title: 'Volunteer with us', img: '/volunteer-cta.jpg' },
+      { link: '#', title: 'Shop with us', img: '/shop-cta.jpg' }
+    ]"
   />
 
   <Footer charity_no="© 2024 Cancer Focus Northern Ireland. Charity Number: NIC 101307"
