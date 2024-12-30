@@ -17,13 +17,13 @@
 </script>
 
 <template>
-  <section class="py-10 section" :style="{ backgroundColor: background }">
+  <section class="py-10 section" :style="{ backgroundColor: background }" data-aos="fade">
     <div class="container px-4 lg:flex">
 
       <div class="relative w-full lg:w-6/12 image" :class="{
         'lg:order-4': side === 'image_right',
         'lg:order-1': side === 'image_left'
-      }">
+      }" data-aos="fade-up" data-aos-duration="750">
         <img :src="image" :alt="title" :title="title" />
       </div>
 
@@ -34,11 +34,11 @@
         'order-1': side === 'image_right',
         'order-3': side === 'image_left'
       }">
-        <h4 class="mb-4" :class="{'hidden': subtitle === '' }">{{ subtitle }}</h4>
-        <h2 class="leading-none mb-4 lg:mb-8">{{ title }}</h2>
-        <p v-html="para"></p>
+        <h4 class="mb-4" :class="{'hidden': subtitle === '' }" data-aos="fade-up" data-aos-duration="500">{{ subtitle }}</h4>
+        <h2 class="leading-none mb-4 lg:mb-8" data-aos-duration="600">{{ title }}</h2>
+        <p v-html="para" data-aos="fade-up" data-aos-duration="750"></p>
 
-        <div class="buttons mt-8">
+        <div class="buttons mt-8" data-aos="fade-up" data-aos-duration="750">
           <a v-for="item in buttons" :key="item.link" :href="item.link" class="button" :class="item.class">
             <img :src="item.img" v-if="item.img" class="inline mr-2.5" aria-hidden="true"/> {{ item.text }}
           </a>

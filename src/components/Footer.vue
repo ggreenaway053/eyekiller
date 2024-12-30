@@ -22,7 +22,7 @@
 </script>
 
 <template>
-  <footer class="pt-12 pb-6 container px-4">
+  <footer class="pt-12 pb-6 container px-4" data-aos="fade">
     <div class="main_footer flex flex-wrap pb-6">
       <div class="w-full md:w-1/2 lg:w-1/4 company pb-6 md:pb-0">
         <a href="/" class="logo inline-block mx-auto mb-4"><img src="/build/images/Logo_dark.svg" alt="Cancer Focus NI" title="Cancer Focus NI" /></a>

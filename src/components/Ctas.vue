@@ -10,21 +10,21 @@ defineProps({
   },
 });
 
-
+const duration = 750;
 </script>
 
 <template>
-  <section class="py-10 ctas text-center flex flex-wrap relative" :style="{ backgroundColor: background }">
+  <section class="py-10 ctas text-center flex flex-wrap relative" :style="{ backgroundColor: background }" data-aos="fade">
     <div class="container px-4">
 
       <div class="w-full relative">
-        <div class="md:w-8/12 lg:w-6/12 mx-auto mb-4">
+        <div class="md:w-8/12 lg:w-6/12 mx-auto mb-4" data-aos="fade-up" data-aos-duration="500">
           <h4 class="mb-4">{{ subtitle }}</h4>
           <h3>{{ title }}</h3>
         </div>
       </div>
 
-      <div class="cta w-2/4 lg:w-1/4 inline-block mt-2 lg:mt-4 px-2 lg:px-4 relative" v-for="cta in ctas" :key="cta.link">
+      <div class="cta w-2/4 lg:w-1/4 inline-block mt-2 lg:mt-4 px-2 lg:px-4 relative" v-for="(cta, index) in ctas" :key="index" data-aos="fade-up" :data-aos-duration="duration + (index * 250)">
         <a :href="cta.link" class="block relative">
           <img :src="cta.img" :alt="cta.title" :title="cta.title" />
           <h5 class="absolute bottom-0 left-0 text-white p-4 w-full font-bold text-lg md:text-xl lg:text-2xl leading-tight">{{ cta.title }}</h5>

@@ -2,7 +2,13 @@ import { createApp } from 'vue'
 import './main.css'
 import App from './App.vue'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 createApp(App).mount('#app')
+
+// animate on scroll initialised.
+window.onload=function(){ AOS.init(); }
 
 // Count Up to Desired Number.
 const counters = document.querySelectorAll('.counter h5[data-count]');

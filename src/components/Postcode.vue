@@ -12,12 +12,12 @@
 </script>
 
 <template>
-  <section class="lg:py-6 section px-4">
+  <section class="lg:py-6 section px-4" data-aos="fade">
     <div class="container p-8 lg:flex flex-wrap" :style="{ backgroundColor: background }">
-      <div class="w-full lg:w-5/12 flex flex-wrap content-center justify-center px-12 lg:px-0 pb-8 lg:pb-0 content md:mb-8 lg:mb-0">
+      <div class="w-full lg:w-5/12 flex flex-wrap items-center justify-center px-12 lg:px-0 pb-8 lg:pb-0 content md:mb-8 lg:mb-0" data-aos="fade-up" data-aos-duration="750">
         <img src="/build/images/postcode-icon.svg" :alt="title" :title="title" class="lg:mr-8 mb-4 lg:mb-0" /> <h4 class="w-full lg:w-auto text-center leading-none">{{ title }}</h4>
       </div>
-      <div class="w-full lg:w-7/12 input flex flex-wrap items-center lg:pl-8">
+      <div class="w-full lg:w-7/12 input flex flex-wrap items-center lg:pl-8" data-aos="fade-up" data-aos-duration="500">
         <form class="w-full flex flex-wrap items-center justify-between" @submit.prevent="handleSubmit">
           <label for="postcode" class="w-full lg:w-3/12 text-center mb-4 lg:mb-0">Enter your postcode</label>
           <input type="text" id="postcode" name="postcode" required class="lg:mx-6 w-full lg:w-6/12 mb-4 lg:mb-0" v-model="postcode"/>

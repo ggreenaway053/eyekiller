@@ -20,8 +20,9 @@
       default: () => []
     }
   });
+  const duration = 500;
 
-  const swiperInstance = ref()
+  const swiperInstance = ref();
   function onSwiper(swiper) {
       swiperInstance.value = swiper
   }
@@ -34,15 +35,15 @@
 </script>
 
 <template>
-  <section class="py-10 section">
+  <section class="py-10 section" data-aos="fade">
     <div class="container px-4 lg:flex">
 
       <div class="w-full lg:w-5/12 content lg:flex content-center flex-wrap mt-6 lg:mt-0 lg:order-3">
-        <h2 class="leading-none mb-4 lg:mb-8" v-html="title"></h2>
-        <p v-html="para" class="text-lg md:text-xl"></p>
+        <h2 class="leading-none mb-4 lg:mb-8" v-html="title" data-aos="fade-up" data-aos-duration="500"></h2>
+        <p v-html="para" class="text-lg md:text-xl" data-aos="fade-up" data-aos-duration="750"></p>
 
         <div class="counters flex flex-wrap">
-          <div class="counter w-6/12 mt-6" v-for="(item,index) in counters" :key="index" :class="{'pl-6': index % 2 !== 0, 'pr-6': index % 2 == 0}">
+          <div class="counter w-6/12 mt-6" v-for="(item,index) in counters" :key="index" :class="{'pl-6': index % 2 !== 0, 'pr-6': index % 2 == 0}" data-aos="fade-up" :data-aos-duration="duration + (index * 250)">
             <h5 class="h2" :data-count="item.number">{{ item.number }}</h5>
             <p v-html="item.para" class="text-lg md:text-xl"></p>
           </div>
@@ -50,7 +51,7 @@
       </div>
       <div class="empty hidden lg:block w-1/12 order-2"></div>
 
-      <div class="relative w-full lg:w-6/12 image lg:order-1 mt-10 lg:mt-0 relative">
+      <div class="relative w-full lg:w-6/12 image lg:order-1 mt-10 lg:mt-0 relative" data-aos="fade-up" data-aos-duration="1000">
         <img :src="image" :alt="image_alt" :title="image_alt" />
 
         <div class="slider_holder lg:p-6 lg:absolute bottom-0 left-0 w-full">

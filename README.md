@@ -9,4 +9,4 @@ Languages/Libraries/npm packages used:
 - Vite
 - Tailwind
 - Swiper
-- GSAP (for animations)
+- AOS (Animate on Scroll)
