@@ -1,11 +1,14 @@
 <script setup>
-import Header from './components/Header.vue';
-import Footer from './components/Footer.vue';
-import Banner from './components/Banner.vue';
-import Ctas from './components/Ctas.vue';
-import Flexi from './components/Flexi.vue';
-import Postcode from './components/Postcode.vue';
-import CtasAlt from './components/CtasAlt.vue';
+  import Header from './components/Header.vue';
+  import Footer from './components/Footer.vue';
+
+  import Banner from './components/Banner.vue';
+  import Ctas from './components/Ctas.vue';
+  import Flexi from './components/Flexi.vue';
+  import Postcode from './components/Postcode.vue';
+  import CtasAlt from './components/CtasAlt.vue';
+  import Slider from './components/Slider.vue';
+  import Callout from './components/Callout.vue';
 </script>
 
 <template>
@@ -65,6 +68,32 @@ import CtasAlt from './components/CtasAlt.vue';
       { link: '#', title: 'Volunteer with us', img: '/build/images/volunteer-cta.jpg' },
       { link: '#', title: 'Shop with us', img: '/build/images/shop-cta.jpg' }
     ]"
+  />
+  <Slider 
+    title="Together, we're <br class='hidden md:inline'> making a difference"
+    para="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet vulputate dolor ac luctus."
+    image="/build/images/making-diff-img.jpg"
+    image_alt="Together, we're making a difference"
+    :counters="[
+      { number: '5000', para: 'Lorem ipsum dolor sit amet sed turpis at convallis.' },
+      { number: '5000', para: 'Lorem ipsum dolor sit amet sed turpis at convallis.' },
+      { number: '5000', para: 'Lorem ipsum dolor sit amet sed turpis at convallis.' },
+      { number: '5000', para: 'Lorem ipsum dolor sit amet sed turpis at convallis.' }
+    ]"
+    :slides="[
+      { content: 'The family support service helped me and my son become stronger and more able to get through this confusing and agonising time', person: 'Cancer patient Jo-Ann Grimley'},
+      { content: 'Here is a second slide', person: 'Gareth'},
+      { content: 'A third for good luck', person: 'Also Gareth'}
+    ]"
+  />
+
+  <Callout 
+    title="Your donation will help change lives"
+    para="By donating today, you will be making a real difference to the life of someone or a family affected by cancer."
+    background="#008097"
+    button_link="#"
+    button_text="Make a Donation"
+    button_class="bg-white"
   />
 
   <Footer charity_no="© 2024 Cancer Focus Northern Ireland. Charity Number: NIC 101307"

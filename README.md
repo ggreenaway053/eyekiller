@@ -8,3 +8,5 @@ Languages/Libraries/npm packages used:
 - Vue (as requested)
 - Vite
 - Tailwind
+- Swiper
+- GSAP (for animations)

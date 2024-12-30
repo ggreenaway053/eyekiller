@@ -27,12 +27,12 @@ function toggleSearch(){
 <template>
   <header class="fixed w-full left-0 top-0 z-50" :class="{ stuck: isScrolled }">
     <div class="container flex py-4 px-4 2xl:px-0">
-      <div class="mobile w-3/12 flex lg:hidden items-center">
+      <div class="mobile w-2/12 flex lg:hidden items-center">
         <button @click="toggleMenu" class="mr-5 search"><Burger /></button>
         <button @click="toggleSearch" class="search"><img src="/build/images/Search.svg" alt="Toggle Search" title="Toggle Search" /></button>
       </div>
 
-      <div class="logo w-6/12 lg:w-2/12 text-center lg:text-left relative">
+      <div class="logo w-7/12 lg:w-2/12 text-center lg:text-left relative">
         <a href="/" class="logo inline-block mx-auto relative">
           <img src="/build/images/Logo_dark.svg" alt="Cancer Focus NI" title="Cancer Focus NI" id="dark_logo" />
           <img src="/build/images/logo.svg" alt="Cancer Focus NI" title="Cancer Focus NI" id="light_logo" />
