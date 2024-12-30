@@ -92,9 +92,9 @@ function toggleSearch(){
 #offcanvas_menu .nav, #offcanvas_menu .nav .buttons{ flex-flow: row wrap; }
 header{ border-bottom: 1px solid rgba(255,255,255,0.2); transition: .5s; }
 
-header .button{ font-size: 16px; }
+header .button{ font-size: 16px; padding: .5rem .75rem;}
 header .button.primary img{ margin-top: -3px; }
-header .nav li a{ color: var(--white); font-weight: 600; transition: .5s; position: relative; font-size: 18px; }
+header .nav li a{ color: var(--white); font-weight: 600; transition: .5s; position: relative; font-size: 16px; }
 header .nav li a:before{ content: ''; display: block; width: 0px; height: 2px; background: var(--white); transition: .3s all; position: absolute; left: 0; bottom: -2px; }
 header .nav li a:hover:before{ width: 100%; }
 
@@ -109,7 +109,10 @@ header.stuck #dark_logo{opacity: 1; }
 header.stuck #light_logo{ opacity: 0; }
 
 @media all and (min-width: 768px){
-  header .button{ font-size: 18px; }
   #offcanvas_menu{ width: calc(100vw - 70%); }
+}
+
+@media all and (min-width: 1440px){
+  header .button, header .nav li a{ font-size: 18px; }
 }
 </style>

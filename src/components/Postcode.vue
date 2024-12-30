@@ -20,8 +20,8 @@
       <div class="w-full lg:w-7/12 input flex flex-wrap items-center lg:pl-8" data-aos="fade-up" data-aos-duration="500">
         <form class="w-full flex flex-wrap items-center justify-between" @submit.prevent="handleSubmit">
           <label for="postcode" class="w-full lg:w-3/12 text-center mb-4 lg:mb-0">Enter your postcode</label>
-          <input type="text" id="postcode" name="postcode" required class="lg:mx-6 w-full lg:w-6/12 mb-4 lg:mb-0" v-model="postcode"/>
-          <input type="submit" value="Find Services" class="button primary w-full lg:w-2/12" />
+          <input type="text" id="postcode" name="postcode" required class="2xl:mx-6 lg:mx-3 w-full lg:w-5/12 2xl:w-6/12 mb-4 lg:mb-0" v-model="postcode"/>
+          <input type="submit" value="Find Services" class="button primary w-full lg:w-3/12 2xl:w-2/12" />
         </form>
       </div>
     </div>

@@ -19,7 +19,7 @@
         <h2 class="leading-none mb-4 lg:mb-8" data-aos="fade-in" data-aos-duration="500">{{ title }}</h2>
         <p v-html="para" class="text-white text-lg lg:text-2xl leading-relaxed" data-aos="fade-in" data-aos-duration="750"></p>
 
-        <a :href="button_link" class="button mt-10 inline-block text-lg w-8/12 md:w-8/12 xl:w-4/12 2xl:w-3/12" :class="button_class" :style="{ color: background }" data-aos="fade-in" data-aos-duration="800">{{ button_text }}</a>
+        <a :href="button_link" class="button mt-10 inline-block text-lg w-8/12 md:w-8/12 xl:w-5/12 2xl:w-3/12" :class="button_class" :style="{ color: background }" data-aos="fade-in" data-aos-duration="800">{{ button_text }}</a>
       </div>
     </div>
   </section>

@@ -71,8 +71,10 @@
           </div>
           
           <div class="w-full flex flex-wrap md:justify-between">
-            <input type="submit" value="Sign Up" class="button primary w-full md:w-3/12 md:order-2" />
-            <div class="md:order-1 mt-4 md:mt-0 w-full md:w-8/12 flex flex-wrap items-center"><p id="disclaimer">By signing up to the mailing list you agree to the <a href="#">Privacy Policy</a></p></div>
+            <div class="flex items-center w-full md:w-4/12 2xl:w-3/12 md:order-2">
+              <input type="submit" value="Sign Up" class="button primary w-full" />
+            </div>
+            <div class="md:order-1 mt-4 md:mt-0 w-full md:w-7/12 2xl:w-8/12 flex flex-wrap items-center"><p id="disclaimer">By signing up to the mailing list you agree to the <a href="#">Privacy Policy</a></p></div>
           </div>
         </form>
       </div>
@@ -88,8 +90,9 @@
 
 <style scoped>
 footer .newsletter form p{color: #666;}
+footer .newsletter form #disclaimer{font-size: 14px; }
 footer .newsletter label{font-weight: 600; color: var(--primary);}
-footer .newsletter form input{border-radius: 5px; border: 1px solid #C8DEE4; transition: .3s; padding: .5rem .75rem; font-size: 18px;}
+footer .newsletter form input:not(.button){border-radius: 5px; border: 1px solid #C8DEE4; transition: .3s; padding: .5rem .75rem; font-size: 18px;}
 footer .newsletter h5{color: var(--primary); font-weight: 600; font-size: 1.2rem; }
 footer .newsletter p:not(#disclaimer){ font-size: 1.1rem; }
 

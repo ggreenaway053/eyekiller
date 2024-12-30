@@ -1089,7 +1089,7 @@ body.static{
 
 .button{
   border: 1px solid;
-  padding: .5rem .75rem;
+  padding: .75rem 1rem;
   transition: .3s all;
   border-radius: 5px;
   font-weight: 600;
@@ -1223,16 +1223,16 @@ body.static{
     width: 16.666667%;
   }
 
-  .md\:w-3\/12 {
-    width: 25%;
-  }
-
   .md\:w-4\/12 {
     width: 33.333333%;
   }
 
   .md\:w-6\/12 {
     width: 50%;
+  }
+
+  .md\:w-7\/12 {
+    width: 58.333333%;
   }
 
   .md\:w-8\/12 {
@@ -1292,9 +1292,9 @@ body.static{
     order: 4;
   }
 
-  .lg\:mx-6 {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+  .lg\:mx-3 {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
   }
 
   .lg\:mb-0 {
@@ -1444,9 +1444,18 @@ body.static{
   .xl\:w-4\/12 {
     width: 33.333333%;
   }
+
+  .xl\:w-5\/12 {
+    width: 41.666667%;
+  }
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:mx-6 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
   .\32xl\:w-2\/12 {
     width: 16.666667%;
   }
@@ -1457,6 +1466,10 @@ body.static{
 
   .\32xl\:w-6\/12 {
     width: 50%;
+  }
+
+  .\32xl\:w-8\/12 {
+    width: 66.666667%;
   }
 
   .\32xl\:px-0 {
