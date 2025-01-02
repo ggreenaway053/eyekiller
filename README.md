@@ -10,3 +10,11 @@ Languages/Libraries/npm packages used:
 - Tailwind
 - Swiper
 - AOS (Animate on Scroll)
+
+### A third-level heading
+To run project, first download/copy this repo. Then in terminal, cd into the project. After this run
+```
+npm install && npm run dev
+```
+
+Click the localhost link it provides.

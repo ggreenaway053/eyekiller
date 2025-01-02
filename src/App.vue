@@ -16,30 +16,30 @@
     :links="[
       { link: '#', title: 'Get Support', 
         submenu:[
-          { link: '#', title: 'Submenu Item 1' },
-          { link: '#', title: 'Submenu Item 2' },
-          { link: '#', title: 'Submenu Item 3' }
+          { link: '#', title: 'Support Item 1' },
+          { link: '#', title: 'Support Item 2' },
+          { link: '#', title: 'Support Item 3' }
         ] 
       },
       { link: '#', title: 'Cancer Prevention',
         submenu:[
-          { link: '#', title: 'Submenu Item 1' },
-          { link: '#', title: 'Submenu Item 2' },
-          { link: '#', title: 'Submenu Item 3' }
+          { link: '#', title: 'Prevent Item 1' },
+          { link: '#', title: 'Prevent Item 2' },
+          { link: '#', title: 'Prevent Item 3' }
         ]
        },
       { link: '#', title: 'Get Involved',
         submenu:[
-          { link: '#', title: 'Submenu Item 1' },
-          { link: '#', title: 'Submenu Item 2' },
-          { link: '#', title: 'Submenu Item 3' }
+          { link: '#', title: 'Involved Item 1' },
+          { link: '#', title: 'Involved Item 2' },
+          { link: '#', title: 'Involved Item 3' }
         ] 
       },
       { link: '#', title: 'Explore',
         submenu:[
-          { link: '#', title: 'Submenu Item 1' },
-          { link: '#', title: 'Submenu Item 2' },
-          { link: '#', title: 'Submenu Item 3' }
+          { link: '#', title: 'Explore Item 1' },
+          { link: '#', title: 'Explore Item 2' },
+          { link: '#', title: 'Explore Item 3' }
         ]
        },
     ]"
