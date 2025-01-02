@@ -12,7 +12,38 @@
 </script>
 
 <template>
-  <Header />
+  <Header 
+    :links="[
+      { link: '#', title: 'Get Support', 
+        submenu:[
+          { link: '#', title: 'Submenu Item 1' },
+          { link: '#', title: 'Submenu Item 2' },
+          { link: '#', title: 'Submenu Item 3' }
+        ] 
+      },
+      { link: '#', title: 'Cancer Prevention',
+        submenu:[
+          { link: '#', title: 'Submenu Item 1' },
+          { link: '#', title: 'Submenu Item 2' },
+          { link: '#', title: 'Submenu Item 3' }
+        ]
+       },
+      { link: '#', title: 'Get Involved',
+        submenu:[
+          { link: '#', title: 'Submenu Item 1' },
+          { link: '#', title: 'Submenu Item 2' },
+          { link: '#', title: 'Submenu Item 3' }
+        ] 
+      },
+      { link: '#', title: 'Explore',
+        submenu:[
+          { link: '#', title: 'Submenu Item 1' },
+          { link: '#', title: 'Submenu Item 2' },
+          { link: '#', title: 'Submenu Item 3' }
+        ]
+       },
+    ]"
+  />
   <Banner
     title="Supporting local people on their cancer journey"
     desk_img="/build/images/banner-img-desktop.png"
@@ -81,9 +112,9 @@
       { number: '5000', para: 'Lorem ipsum dolor sit amet sed turpis at convallis.' }
     ]"
     :slides="[
-      { content: 'The family support service helped me and my son become stronger and more able to get through this confusing and agonising time', person: 'Cancer patient Jo-Ann Grimley'},
-      { content: 'Here is a second slide', person: 'Gareth'},
-      { content: 'A third for good luck', person: 'Also Gareth'}
+      { content: 'The family support service helped me and my son become stronger and more able to get through this confusing and agonising time', person: 'Cancer patient Jo-Ann Grimley', image: '/build/images/making-diff-img.jpg' },
+      { content: 'Here is a second slide', person: 'Gareth', image: '/build/images/sliderimg2.jpg' },
+      { content: 'A third for good luck', person: 'Also Gareth', image: '/build/images/sliderimg3.jpg' }
     ]"
   />
 

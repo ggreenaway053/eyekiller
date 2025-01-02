@@ -35,7 +35,7 @@
         'order-3': side === 'image_left'
       }">
         <h4 class="mb-4" :class="{'hidden': subtitle === '' }" data-aos="fade-up" data-aos-duration="500">{{ subtitle }}</h4>
-        <h2 class="leading-none mb-4 lg:mb-8" data-aos-duration="600">{{ title }}</h2>
+        <h2 class="leading-none mb-4 lg:mb-8" data-aos="fade-up" data-aos-duration="600">{{ title }}</h2>
         <p v-html="para" data-aos="fade-up" data-aos-duration="750"></p>
 
         <div class="buttons mt-8" data-aos="fade-up" data-aos-duration="750">

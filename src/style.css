@@ -79,7 +79,7 @@ body.static{ overflow: hidden; max-height: 100vh;}
 }
 
 /* GENERAL BANNERS*/
-.banner{ max-height: 95vh; overflow: hidden; }
+.banner{ max-height: 85vh; overflow: hidden; }
 .banner::before{
   content: '';
   display: block;

@@ -1,7 +1,9 @@
 <script setup>
   import { ref } from 'vue';
+  import { EffectFade } from 'swiper/modules';
   import { Swiper, SwiperSlide } from 'swiper/vue';
   import 'swiper/css';
+  import 'swiper/css/effect-fade';
 
   import PrevArrow from './icons/PrevArrow.vue';
   import NextArrow from './icons/NextArrow.vue';
@@ -22,15 +24,21 @@
   });
   const duration = 500;
 
-  const swiperInstance = ref();
+  const swiper_contentInstance = ref();
+  const swiper_ImageInstance = ref();
+  function onImageSwiper(swiper) {
+    swiper_ImageInstance.value = swiper
+  }
   function onSwiper(swiper) {
-      swiperInstance.value = swiper
+      swiper_contentInstance.value = swiper
   }
   const swiperNextSlide = () => {
-      swiperInstance.value.slideNext()
+      swiper_contentInstance.value.slideNext()
+      swiper_ImageInstance.value.slideNext()
   };
   const swiperPrevSlide = () => {
-      swiperInstance.value.slidePrev()
+    swiper_contentInstance.value.slidePrev()
+    swiper_ImageInstance.value.slidePrev()
   };
 </script>
 
@@ -52,13 +60,25 @@
       <div class="empty hidden lg:block w-1/12 order-2"></div>
 
       <div class="relative w-full lg:w-6/12 image lg:order-1 mt-10 lg:mt-0 relative" data-aos="fade-up" data-aos-duration="1000">
-        <img :src="image" :alt="image_alt" :title="image_alt" />
+        <div class="image_slider slider_holder">
+          <swiper 
+            @swiper="onImageSwiper"
+            :loop="true"
+            :modules="[EffectFade]" effect="fade"
+            :allowTouchMove="false"
+          >
+              <swiper-slide v-for="(slide, index) in slides" :key="index">
+                <img :src="slide.image" :alt="slide.person" :title="slide.person" />
+              </swiper-slide>
+          </swiper>
+        </div>
 
-        <div class="slider_holder lg:p-6 lg:absolute bottom-0 left-0 w-full">
+        <div class="slider_holder lg:p-6 lg:absolute bottom-0 left-0 w-full z-10">
           <div class="swiper_inner py-6 lg:p-6 bg-white">
             <swiper
               @swiper="onSwiper"
               :loop="true"
+              :allowTouchMove="false"
             >
               <swiper-slide v-for="(slide, index) in slides" :key="index" class="pr-5 pb-5">
                 <p class="mb-2 text-lg">"{{ slide.content }}"</p>
