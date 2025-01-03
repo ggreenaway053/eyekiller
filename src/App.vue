@@ -47,6 +47,7 @@
   <Banner
     title="Supporting local people on their cancer journey"
     desk_img="/build/images/banner-img-desktop.png"
+    tab_img="/build/images/banner-img-tablet.jpg"
     mob_img="/build/images/banner-img-mobile.png"
     :links="[
       { link: '#', title: 'Visit a Centre', img: '/build/images/visit-centre-banner-link.png' },
