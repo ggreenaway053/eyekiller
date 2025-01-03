@@ -29,8 +29,8 @@ const duration = 750;
     <div class="w-full links container absolute bottom-0 left-2/4 -translate-x-1/2 px-4 lg:px-0">
       <div class="inner mx-auto flex items-center justify-center mb-4 lg:mb-10">
         <div class="link" v-for="(link, index) in links" :key="link.link" data-aos="fade-up" :data-aos-duration="duration + (index * 250)">
-          <a class="block flex justify-center flex-wrap items-center" :class="{ 'me-6 md:me-20': index < links.length - 1 }" :href="link.link">
-            <img :src="link.img" :alt="link.title" :title="link.title" class="mb-2 lg:me-4 lg:mb-0" />
+          <a class="block flex justify-center flex-wrap items-center" :class="{ 'mr-6 md:mr-20': index < links.length - 1 }" :href="link.link">
+            <img :src="link.img" :alt="link.title" :title="link.title" class="mb-2 md:mr-4 md:mb-0" />
             <h6 class="text-white underline font-bold">{{ link.title }}</h6>
           </a>
         </div>
